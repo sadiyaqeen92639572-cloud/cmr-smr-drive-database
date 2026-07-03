@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CMR vs SMR Hard Drive Database — NAS Drive Compatibility Checker 2026</title>
+<meta name="description" content="Instantly check if any HDD is CMR or SMR. Search 70+ drives: WD Red, Seagate IronWolf, Toshiba N300 — with RPM, cache, NAS compatibility and live $/TB prices.">
+<meta name="keywords" content="cmr smr hard drive checker, wd red cmr or smr, seagate ironwolf cmr, nas drive compatibility, which hdd is cmr 2026, smr drive list nas">
+<link rel="canonical" href="https://sadiyaqeen92639572-cloud.github.io/cmr-smr-drive-database/">
+<meta property="og:title" content="CMR vs SMR Hard Drive Database — NAS Drive Checker 2026">
+<meta property="og:description" content="Search 70+ HDDs. Instantly see CMR or SMR status, RPM, cache, NAS suitability. WD Red, Seagate IronWolf, Toshiba N300 and more.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sadiyaqeen92639572-cloud.github.io/cmr-smr-drive-database/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="google-site-verification" content="76BtuPWapEs7YKz4n_-PAXK_31eyF1SGsayZYBetFMg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "CMR vs SMR Hard Drive Database",
+      "url": "https://sadiyaqeen92639572-cloud.github.io/cmr-smr-drive-database/",
+      "description": "Search and filter 70+ HDD models to check CMR or SMR recording technology, RPM, cache size, and NAS compatibility.",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Any",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Is WD Red CMR or SMR?",
+          "acceptedAnswer": { "@type": "Answer", "text": "WD Red (WD*EFAX models, 2020+) is SMR — problematic for NAS RAID. WD Red Plus (WD*EFRX/EFZZ/EFBX models) is CMR and safe for NAS. WD Red Pro (WD*FFBX/KFBX/KFGX) is always CMR. Always check the model number before buying." }},
+        { "@type": "Question", "name": "Is Seagate IronWolf CMR or SMR?",
+          "acceptedAnswer": { "@type": "Answer", "text": "All Seagate IronWolf and IronWolf Pro drives are CMR. Seagate never used SMR in the IronWolf line, making it one of the safest choices for NAS and RAID arrays." }},
+        { "@type": "Question", "name": "Why does CMR vs SMR matter for NAS?",
+          "acceptedAnswer": { "@type": "Answer", "text": "SMR drives have severe write performance degradation under sustained workloads typical of NAS RAID rebuilds. A RAID rebuild on SMR can take 5-10x longer than CMR, causing timeouts and array failures. Always use CMR drives in NAS RAID configurations." }},
+        { "@type": "Question", "name": "Is Toshiba N300 CMR?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. All Toshiba N300 drives are CMR (Conventional Magnetic Recording). The N300 is designed specifically for NAS use and runs at 7200 RPM, making it a strong alternative to WD Red Plus and Seagate IronWolf." }},
+        { "@type": "Question", "name": "Which WD drives are CMR safe for NAS?",
+          "acceptedAnswer": { "@type": "Answer", "text": "WD Red Plus, WD Red Pro, WD Gold, and WD Ultrastar are all CMR and safe for NAS use. Avoid standard WD Red (EFAX suffix) which is SMR. WD Purple (surveillance) is CMR but not optimized for RAID." }},
+        { "@type": "Question", "name": "Are WD Blue drives CMR or SMR?",
+          "acceptedAnswer": { "@type": "Answer", "text": "WD Blue is mixed. 1TB (WD10EZEX) is CMR at 7200 RPM. 2TB, 4TB, and 6TB WD Blue (WD*EZAZ) are SMR. WD Blue drives are not recommended for NAS regardless — they lack NAS-specific firmware features like TLER." }},
+        { "@type": "Question", "name": "What is the difference between CMR and SMR?",
+          "acceptedAnswer": { "@type": "Answer", "text": "CMR (Conventional Magnetic Recording) writes each track independently — fast random writes, suitable for RAID. SMR (Shingled Magnetic Recording) overlaps tracks for higher density but requires rewriting entire zones on updates — slow under sustained write workloads, problematic for NAS RAID rebuilds." }},
+        { "@type": "Question", "name": "Is Seagate Barracuda CMR or SMR?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Seagate Barracuda is mixed. 1TB and 2TB (ST*DM010, ST*DM008) are CMR. 4TB, 6TB, and 8TB Barracuda are SMR. Not recommended for NAS use regardless — desktop drives lack TLER and NAS vibration compensation." }}
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sadiyaqeen92639572-cloud.github.io/" },
+        { "@type": "ListItem", "position": 2, "name": "CMR vs SMR Drive Database", "item": "https://sadiyaqeen92639572-cloud.github.io/cmr-smr-drive-database/" }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "name": "How to check if a hard drive is CMR or SMR",
+      "description": "Use the CMR/SMR lookup tool to verify your drive's recording technology before buying for NAS.",
+      "totalTime": "PT1M",
+      "tool": [{ "@type": "HowToTool", "name": "CMR vs SMR Hard Drive Database" }],
+      "step": [
+        { "@type": "HowToStep", "position": 1, "name": "Enter model or brand", "text": "Type the drive model number (e.g. WD40EFAX) or brand name in the search box." },
+        { "@type": "HowToStep", "position": 2, "name": "Apply filters", "text": "Filter by brand (WD/Seagate/Toshiba), recording type (CMR/SMR), or use case (NAS/Surveillance/Desktop)." },
+        { "@type": "HowToStep", "position": 3, "name": "Read the CMR/SMR badge", "text": "Green badge = CMR (safe for NAS RAID). Red badge = SMR (avoid for NAS)." },
+        { "@type": "HowToStep", "position": 4, "name": "Check current $/TB price", "text": "Click 'Check $/TB prices' to compare current Amazon prices for CMR drives on cmrcheck.com." }
+      ]
+    }
+  ]
+}
+</script>
+<style>
+:root {
+  --brand: #1e40af;
+  --brand-dark: #1e3a8a;
+  --cmr: #16a34a;
+  --cmr-bg: #dcfce7;
+  --smr: #dc2626;
+  --smr-bg: #fee2e2;
+  --text: #111827;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+  --bg: #f9fafb;
+  --surface: #ffffff;
+  --radius: 10px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+a { color: var(--brand); }
+
+header { background: linear-gradient(135deg, var(--brand-dark) 0%, var(--brand) 100%); color: white; padding: 48px 20px 72px; text-align: center; }
+header h1 { font-size: clamp(1.5rem, 4vw, 2.2rem); font-weight: 800; margin-bottom: 12px; }
+header p { font-size: 1.05rem; opacity: .88; max-width: 600px; margin: 0 auto; }
+
+.tool-card {
+  background: var(--surface);
+  border-radius: 16px;
+  box-shadow: 0 8px 40px rgba(0,0,0,.12);
+  max-width: 860px;
+  margin: -40px auto 40px;
+  padding: 32px;
+  position: relative;
+  z-index: 10;
+}
+
+.search-row { display: flex; gap: 10px; margin-bottom: 16px; }
+.search-row input {
+  flex: 1; padding: 12px 16px; border: 2px solid var(--border);
+  border-radius: 8px; font-size: 1rem; outline: none;
+  transition: border-color .2s;
+}
+.search-row input:focus { border-color: var(--brand); }
+.search-row button {
+  padding: 12px 20px; background: var(--brand); color: white;
+  border: none; border-radius: 8px; font-size: .95rem; font-weight: 600;
+  cursor: pointer;
+}
+
+.filter-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+.filter-group { display: flex; gap: 6px; flex-wrap: wrap; }
+.filter-label { font-size: .72rem; text-transform: uppercase; letter-spacing: .5px; color: var(--muted); align-self: center; margin-right: 4px; }
+.chip {
+  padding: 5px 12px; border-radius: 20px; border: 1.5px solid var(--border);
+  background: white; font-size: .8rem; font-weight: 500; cursor: pointer;
+  transition: all .15s; color: var(--text);
+}
+.chip:hover { border-color: var(--brand); color: var(--brand); }
+.chip.active { background: var(--brand); border-color: var(--brand); color: white; }
+.chip.cmr-active { background: var(--cmr); border-color: var(--cmr); color: white; }
+.chip.smr-active { background: var(--smr); border-color: var(--smr); color: white; }
+
+.results-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+.results-count { font-size: .85rem; color: var(--muted); font-weight: 500; }
+
+.drive-grid { display: grid; gap: 10px; }
+.drive-card {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 12px;
+  align-items: center;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: white;
+  transition: box-shadow .15s;
+}
+.drive-card:hover { box-shadow: 0 2px 12px rgba(0,0,0,.08); }
+
+.type-badge {
+  padding: 4px 10px; border-radius: 6px; font-size: .78rem;
+  font-weight: 700; letter-spacing: .3px; white-space: nowrap;
+}
+.cmr-badge { background: var(--cmr-bg); color: var(--cmr); }
+.smr-badge { background: var(--smr-bg); color: var(--smr); }
+
+.drive-info .model { font-weight: 700; font-size: .95rem; font-family: 'Courier New', monospace; }
+.drive-info .series { font-size: .82rem; color: var(--muted); margin-top: 2px; }
+
+.drive-specs { display: flex; gap: 12px; font-size: .78rem; color: var(--muted); flex-wrap: wrap; }
+.drive-specs span { white-space: nowrap; }
+.drive-specs .spec-val { color: var(--text); font-weight: 600; }
+
+.nas-badge { font-size: .7rem; padding: 2px 7px; border-radius: 4px; font-weight: 600; }
+.nas-yes { background: #dbeafe; color: #1d4ed8; }
+.nas-no { background: #f3f4f6; color: #9ca3af; }
+.surv-badge { background: #fef3c7; color: #d97706; }
+
+.no-results { text-align: center; padding: 40px 20px; color: var(--muted); }
+
+.content { max-width: 860px; margin: 0 auto; padding: 0 20px 60px; }
+
+h2 { font-size: 1.4rem; font-weight: 700; margin: 40px 0 16px; color: var(--text); }
+h3 { font-size: 1.1rem; font-weight: 700; margin: 28px 0 12px; }
+p { color: #374151; margin-bottom: 14px; line-height: 1.75; }
+
+.warn-box {
+  background: #fff7ed; border: 1px solid #fed7aa; border-radius: var(--radius);
+  padding: 16px 20px; margin: 20px 0; display: flex; gap: 12px; align-items: flex-start;
+}
+.warn-box .icon { font-size: 1.2rem; flex-shrink: 0; margin-top: 2px; }
+.warn-box p { margin: 0; color: #9a3412; font-size: .9rem; }
+
+.compare-table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: .88rem; }
+.compare-table th { background: #f3f4f6; padding: 10px 14px; text-align: left; font-weight: 600; border-bottom: 2px solid var(--border); }
+.compare-table td { padding: 10px 14px; border-bottom: 1px solid var(--border); }
+.compare-table tr:last-child td { border-bottom: none; }
+.compare-table .good { color: var(--cmr); font-weight: 600; }
+.compare-table .bad { color: var(--smr); font-weight: 600; }
+
+.cta-box {
+  background: #0f172a; color: white; border-radius: 14px;
+  padding: 36px; margin: 40px 0;
+}
+.cta-box h2 { color: white; margin-top: 0; font-size: 1.35rem; }
+.cta-box p { color: rgba(255,255,255,.85); }
+.cta-box ul { color: rgba(255,255,255,.85) !important; padding-left: 20px; margin: 14px 0; }
+.cta-box li { color: rgba(255,255,255,.85) !important; margin-bottom: 8px; line-height: 1.65; }
+.cta-box a.inline { color: #60a5fa; }
+.cta-btn {
+  display: inline-block; margin-top: 20px; padding: 14px 28px;
+  background: #2563eb; color: white; border-radius: 8px; font-weight: 700;
+  text-decoration: none; font-size: 1rem; transition: background .15s;
+}
+.cta-btn:hover { background: #1d4ed8; color: white; }
+
+.faq-item { border-bottom: 1px solid var(--border); padding: 18px 0; }
+.faq-q { font-weight: 700; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+.faq-q::after { content: '+'; font-size: 1.3rem; color: var(--muted); }
+.faq-item.open .faq-q::after { content: '−'; }
+.faq-a { display: none; margin-top: 10px; color: #374151; font-size: .92rem; line-height: 1.75; }
+.faq-item.open .faq-a { display: block; }
+
+footer { background: #1f2937; color: #9ca3af; text-align: center; padding: 28px 20px; font-size: .82rem; }
+footer p { color: #9ca3af; margin: 0; }
+
+@media (max-width: 600px) {
+  .tool-card { margin: -24px 12px 32px; padding: 20px; }
+  .drive-card { grid-template-columns: 1fr; gap: 8px; }
+  .search-row { flex-direction: column; }
+  .drive-specs { gap: 8px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>CMR vs SMR Hard Drive Database</h1>
+  <p>Search 70+ HDD models. Instantly check CMR or SMR status before buying for NAS, RAID, or surveillance.</p>
+</header>
+
+<div class="tool-card">
+  <div class="search-row">
+    <input type="text" id="searchInput" placeholder="Search model number or brand (e.g. WD Red, ST4000, N300…)" oninput="renderDrives()">
+    <button onclick="document.getElementById('searchInput').value='';renderDrives()">Clear</button>
+  </div>
+
+  <div class="filter-row">
+    <span class="filter-label">Brand</span>
+    <div class="filter-group" id="brandFilter">
+      <div class="chip active" data-val="all" onclick="setFilter('brand','all',this)">All</div>
+      <div class="chip" data-val="WD" onclick="setFilter('brand','WD',this)">WD</div>
+      <div class="chip" data-val="Seagate" onclick="setFilter('brand','Seagate',this)">Seagate</div>
+      <div class="chip" data-val="Toshiba" onclick="setFilter('brand','Toshiba',this)">Toshiba</div>
+    </div>
+
+    <span class="filter-label" style="margin-left:8px">Type</span>
+    <div class="filter-group" id="typeFilter">
+      <div class="chip active" data-val="all" onclick="setFilter('type','all',this)">All</div>
+      <div class="chip" data-val="CMR" onclick="setFilter('type','CMR',this)">CMR only ✅</div>
+      <div class="chip" data-val="SMR" onclick="setFilter('type','SMR',this)">SMR only ⚠️</div>
+    </div>
+
+    <span class="filter-label" style="margin-left:8px">Use Case</span>
+    <div class="filter-group" id="useFilter">
+      <div class="chip active" data-val="all" onclick="setFilter('use','all',this)">All</div>
+      <div class="chip" data-val="nas" onclick="setFilter('use','nas',this)">NAS</div>
+      <div class="chip" data-val="surveillance" onclick="setFilter('use','surveillance',this)">Surveillance</div>
+      <div class="chip" data-val="desktop" onclick="setFilter('use','desktop',this)">Desktop</div>
+    </div>
+  </div>
+
+  <div class="results-header">
+    <span class="results-count" id="resultsCount">70 drives</span>
+    <span style="font-size:.78rem;color:var(--muted)">Green = CMR safe for NAS · Red = SMR avoid RAID</span>
+  </div>
+
+  <div class="drive-grid" id="driveGrid"></div>
+</div>
+
+<div class="content">
+
+  <div class="warn-box">
+    <div class="icon">⚠️</div>
+    <p><strong>SMR drives in NAS RAID = danger.</strong> During a RAID rebuild, SMR write speed drops to 5–20 MB/s (vs 150+ MB/s for CMR). Rebuilds can take 10–30 days, causing array timeouts and data loss risk. Always verify CMR before buying for NAS.</p>
+  </div>
+
+  <h2>CMR vs SMR: What the Difference Really Means</h2>
+  <p><strong>CMR (Conventional Magnetic Recording)</strong> writes tracks independently. Random writes are fast and consistent — 150–200 MB/s sustained regardless of workload. Drives handle RAID rebuild I/O without performance collapse.</p>
+  <p><strong>SMR (Shingled Magnetic Recording)</strong> overlaps tracks like roof shingles to pack more data per platter. Sequential reads are fine, but any write requires rewriting an entire zone (512KB–256MB). Under sustained NAS workloads, effective write speed drops to single-digit MB/s.</p>
+
+  <table class="compare-table">
+    <thead><tr><th>Property</th><th>CMR</th><th>SMR</th></tr></thead>
+    <tbody>
+      <tr><td>Sequential write</td><td class="good">150–220 MB/s</td><td class="bad">150 MB/s (burst only)</td></tr>
+      <tr><td>Sustained random write</td><td class="good">Fast, consistent</td><td class="bad">5–20 MB/s after cache full</td></tr>
+      <tr><td>RAID rebuild speed</td><td class="good">Normal (6–18 hrs)</td><td class="bad">10–30 days possible</td></tr>
+      <tr><td>NAS / RAID safe</td><td class="good">✅ Yes</td><td class="bad">❌ Avoid</td></tr>
+      <tr><td>Price per TB</td><td>+10–20% premium</td><td>Cheaper</td></tr>
+      <tr><td>Suitable for desktop backup</td><td class="good">Yes</td><td>Yes (single drive only)</td></tr>
+    </tbody>
+  </table>
+
+  <h2>WD Red: The SMR Controversy Explained</h2>
+  <p>In 2020, Western Digital quietly shipped SMR drives under the WD Red branding without disclosure — drives marketed specifically for NAS. After community backlash, WD:</p>
+  <ul style="padding-left:20px;margin-bottom:14px;color:#374151">
+    <li>Rebranded CMR versions as <strong>WD Red Plus</strong> (EFRX/EFZZ suffix)</li>
+    <li>Kept WD Red name for SMR versions (EFAX suffix)</li>
+    <li>Created <strong>WD Red Pro</strong> as the high-RPM CMR line</li>
+  </ul>
+  <p>Check your model suffix: <strong>EFAX = SMR</strong>, <strong>EFRX/EFZZ/EFBX = CMR</strong>.</p>
+
+  <h2>Recommended CMR Drives by Use Case</h2>
+
+  <h3>🏠 Home NAS (1–4 bays)</h3>
+  <p>WD Red Plus 4–8TB or Seagate IronWolf 4–8TB. Both CMR, NAS-optimized firmware with TLER (Time-Limited Error Recovery) to prevent RAID array dropouts. Toshiba N300 is a strong third option at competitive $/TB.</p>
+
+  <h3>🏢 Workgroup NAS (4–8+ bays)</h3>
+  <p>Seagate IronWolf Pro or WD Red Pro. 7200 RPM, 256MB+ cache, rated for 24/7 operation at 300 TB/year workload (vs 180 TB/year for standard NAS drives). 5-year warranty on Pro models.</p>
+
+  <h3>📹 Surveillance / DVR / NVR</h3>
+  <p>WD Purple or Seagate SkyHawk. Both CMR, optimized for constant write streams from multiple camera feeds. Not recommended for RAID — lack the TLER firmware needed to survive array rebuild timeouts.</p>
+
+  <div class="cta-box">
+    <h2>Check Current $/TB Prices for CMR Drives</h2>
+    <p>The lookup tool above shows CMR/SMR status — but not live prices. Hard drive prices change weekly on Amazon. Before buying, compare actual $/TB across all CMR models to avoid overpaying.</p>
+    <ul>
+      <li><strong>Sort by $/TB</strong> — filter CMR-only, sort cheapest per terabyte: IronWolf vs N300 vs Red Plus side-by-side</li>
+      <li><strong>Find the sweet spot capacity</strong> — 4TB CMR drives often cost more $/TB than 6TB or 8TB; the tracker shows the crossover point</li>
+      <li><strong>Monitor price drops</strong> — NAS drives fluctuate $10–30 in a week; bookmark the tracker and check before buying</li>
+      <li><strong>Compare NAS vs Pro</strong> — IronWolf vs IronWolf Pro $/TB premium is often only $8–15/TB for 5yr warranty + higher workload rating</li>
+      <li><strong>Spot bundle deals</strong> — the tracker separates OEM vs retail box pricing so you don't overpay for cardboard</li>
+    </ul>
+    <p><a href="https://cmrcheck.com" class="inline">cmrcheck.com</a> tracks live Amazon prices for 100+ CMR and SMR hard drives, updated weekly. Filter by CMR, sort by $/TB, and find the best-value NAS drive for your build.</p>
+    <a href="https://cmrcheck.com" class="cta-btn">Compare CMR Drive Prices at cmrcheck.com →</a>
+  </div>
+
+  <h2>Frequently Asked Questions</h2>
+
+  <div class="faq-item open">
+    <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Is WD Red CMR or SMR?</div>
+    <div class="faq-a">WD Red (EFAX suffix models, 2020+) is SMR — problematic for NAS RAID. WD Red Plus (EFRX/EFZZ/EFBX) is CMR and safe for NAS. WD Red Pro (FFBX/KFBX/KFGX) is always CMR with 7200 RPM. Always check the model number suffix before buying.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Is Seagate IronWolf CMR?</div>
+    <div class="faq-a">Yes — all Seagate IronWolf and IronWolf Pro drives are CMR. Seagate never shipped SMR in the IronWolf NAS line. IronWolf runs at 5400–5900 RPM; IronWolf Pro at 7200 RPM with 300 TB/year workload rating.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Is Toshiba N300 CMR?</div>
+    <div class="faq-a">Yes. All Toshiba N300 drives are CMR, running at 7200 RPM with 256–512MB cache. The N300 is specifically designed for NAS use with TLER support and 24/7 operation rating. Good alternative to IronWolf at similar $/TB.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Why does SMR cause NAS problems?</div>
+    <div class="faq-a">SMR drives rewrite entire zones (512KB–256MB) for every random write once the drive cache is full. During RAID rebuilds — which generate sustained random writes across the entire drive — SMR speed collapses to 5–20 MB/s. A 4TB RAID rebuild that takes 6 hours on CMR can take 10+ days on SMR, causing controller timeouts and array failure.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Are WD Blue drives CMR?</div>
+    <div class="faq-a">Mixed. WD Blue 1TB (WD10EZEX) is CMR at 7200 RPM. WD Blue 2TB, 4TB, and 6TB (EZAZ suffix) are SMR. Desktop drives are not recommended for NAS regardless — they lack TLER firmware and NAS-specific vibration compensation.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Is Seagate Barracuda SMR?</div>
+    <div class="faq-a">Mixed. Barracuda 1TB (ST1000DM010) and 2TB (ST2000DM008) are CMR at 7200 RPM. 4TB, 6TB, and 8TB Barracuda drives are SMR. Not recommended for NAS regardless — desktop-class firmware without TLER.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Can I use SMR drives in a NAS if I don't use RAID?</div>
+    <div class="faq-a">Yes, with caveats. SMR drives work fine as single-drive NAS storage (e.g. Synology Hybrid RAID with one drive, or a simple JBOD share). The problems appear under sustained random writes: large file copies, background scrubs, or RAID rebuilds. For a media-serving NAS without redundancy, SMR is acceptable but CMR is still safer long-term.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">What does TLER mean on NAS drives?</div>
+    <div class="faq-a">Time-Limited Error Recovery (TLER) limits how long a drive attempts to recover a read error before reporting to the RAID controller — typically 7 seconds. Desktop drives without TLER may spend minutes on a single error recovery, causing the RAID controller to mark the drive as failed. NAS-specific drives (IronWolf, Red Plus, N300) include TLER as standard.</div>
+  </div>
+
+</div>
+
+<footer>
+  <p>CMR vs SMR Hard Drive Database — community reference, updated 2026. Data sourced from manufacturer spec sheets. Verify model numbers before purchasing.</p>
+</footer>
+
+<script>
+const DRIVES = [
+  // WD Red (SMR)
+  {brand:'WD',series:'Red',model:'WD10EFAX',cap:'1TB',type:'SMR',rpm:5400,cache:256,nas:false,surv:false,note:'SMR (2020+)'},
+  {brand:'WD',series:'Red',model:'WD20EFAX',cap:'2TB',type:'SMR',rpm:5400,cache:256,nas:false,surv:false,note:'SMR (2020+)'},
+  {brand:'WD',series:'Red',model:'WD30EFAX',cap:'3TB',type:'SMR',rpm:5400,cache:256,nas:false,surv:false,note:'SMR'},
+  {brand:'WD',series:'Red',model:'WD40EFAX',cap:'4TB',type:'SMR',rpm:5400,cache:256,nas:false,surv:false,note:'SMR'},
+  {brand:'WD',series:'Red',model:'WD60EFAX',cap:'6TB',type:'SMR',rpm:5400,cache:256,nas:false,surv:false,note:'SMR'},
+  // WD Red Plus (CMR)
+  {brand:'WD',series:'Red Plus',model:'WD10EFRX',cap:'1TB',type:'CMR',rpm:5400,cache:64,nas:true,surv:false},
+  {brand:'WD',series:'Red Plus',model:'WD20EFRX',cap:'2TB',type:'CMR',rpm:5400,cache:64,nas:true,surv:false},
+  {brand:'WD',series:'Red Plus',model:'WD30EFRX',cap:'3TB',type:'CMR',rpm:5400,cache:64,nas:true,surv:false},
+  {brand:'WD',series:'Red Plus',model:'WD40EFRX',cap:'4TB',type:'CMR',rpm:5400,cache:256,nas:true,surv:false},
+  {brand:'WD',series:'Red Plus',model:'WD60EFRX',cap:'6TB',type:'CMR',rpm:5400,cache:256,nas:true,surv:false},
+  {brand:'WD',series:'Red Plus',model:'WD80EFZZ',cap:'8TB',type:'CMR',rpm:5640,cache:256,nas:true,surv:false},
+  {brand:'WD',series:'Red Plus',model:'WD101EFBX',cap:'10TB',type:'CMR',rpm:7200,cache:256,nas:true,surv:false},
+  {brand:'WD',series:'Red Plus',model:'WD120EFBX',cap:'12TB',type:'CMR',rpm:7200,cache:256,nas:true,surv:false},
+  {brand:'WD',series:'Red Plus',model:'WD140EFGX',cap:'14TB',type:'CMR',rpm:5400,cache:512,nas:true,surv:false},
+  // WD Red Pro (CMR)
+  {brand:'WD',series:'Red Pro',model:'WD4003FFBX',cap:'4TB',type:'CMR',rpm:7200,cache:256,nas:true,surv:false},
+  {brand:'WD',series:'Red Pro',model:'WD6003FFBX',cap:'6TB',type:'CMR',rpm:7200,cache:256,nas:true,surv:false},
+  {brand:'WD',series:'Red Pro',model:'WD8003FFBX',cap:'8TB',type:'CMR',rpm:7200,cache:256,nas:true,surv:false},
+  {brand:'WD',series:'Red Pro',model:'WD102KFBX',cap:'10TB',type:'CMR',rpm:7200,cache:256,nas:true,surv:false},
+  {brand:'WD',series:'Red Pro',model:'WD121KFBX',cap:'12TB',type:'CMR',rpm:7200,cache:256,nas:true,surv:false},
+  {brand:'WD',series:'Red Pro',model:'WD161KFGX',cap:'16TB',type:'CMR',rpm:7200,cache:512,nas:true,surv:false},
+  {brand:'WD',series:'Red Pro',model:'WD201KFGX',cap:'20TB',type:'CMR',rpm:7200,cache:512,nas:true,surv:false},
+  // WD Purple (CMR, surveillance)
+  {brand:'WD',series:'Purple',model:'WD43PURZ',cap:'4TB',type:'CMR',rpm:5400,cache:256,nas:false,surv:true},
+  {brand:'WD',series:'Purple',model:'WD63PURZ',cap:'6TB',type:'CMR',rpm:5400,cache:256,nas:false,surv:true},
+  {brand:'WD',series:'Purple',model:'WD84PURZ',cap:'8TB',type:'CMR',rpm:5640,cache:256,nas:false,surv:true},
+  {brand:'WD',series:'Purple',model:'WD121PURP',cap:'12TB',type:'CMR',rpm:7200,cache:256,nas:false,surv:true},
+  {brand:'WD',series:'Purple',model:'WD181PURP',cap:'18TB',type:'CMR',rpm:7200,cache:512,nas:false,surv:true},
+  // WD Gold (CMR)
+  {brand:'WD',series:'Gold',model:'WD4003FRYZ',cap:'4TB',type:'CMR',rpm:7200,cache:256,nas:true,surv:false},
+  {brand:'WD',series:'Gold',model:'WD6003FRYZ',cap:'6TB',type:'CMR',rpm:7200,cache:256,nas:true,surv:false},
+  {brand:'WD',series:'Gold',model:'WD8003FRYZ',cap:'8TB',type:'CMR',rpm:7200,cache:256,nas:true,surv:false},
+  {brand:'WD',series:'Gold',model:'WD102KRYZ',cap:'10TB',type:'CMR',rpm:7200,cache:256,nas:true,surv:false},
+  {brand:'WD',series:'Gold',model:'WD121KRYZ',cap:'12TB',type:'CMR',rpm:7200,cache:256,nas:true,surv:false},
+  // WD Blue (mixed)
+  {brand:'WD',series:'Blue',model:'WD10EZEX',cap:'1TB',type:'CMR',rpm:7200,cache:64,nas:false,surv:false},
+  {brand:'WD',series:'Blue',model:'WD20EZAZ',cap:'2TB',type:'SMR',rpm:5400,cache:256,nas:false,surv:false,note:'SMR'},
+  {brand:'WD',series:'Blue',model:'WD40EZAZ',cap:'4TB',type:'SMR',rpm:5400,cache:256,nas:false,surv:false,note:'SMR'},
+  // Seagate IronWolf (all CMR)
+  {brand:'Seagate',series:'IronWolf',model:'ST1000VN002',cap:'1TB',type:'CMR',rpm:5900,cache:64,nas:true,surv:false},
+  {brand:'Seagate',series:'IronWolf',model:'ST2000VN004',cap:'2TB',type:'CMR',rpm:5900,cache:64,nas:true,surv:false},
+  {brand:'Seagate',series:'IronWolf',model:'ST4000VN006',cap:'4TB',type:'CMR',rpm:5900,cache:256,nas:true,surv:false},
+  {brand:'Seagate',series:'IronWolf',model:'ST6000VN001',cap:'6TB',type:'CMR',rpm:5400,cache:256,nas:true,surv:false},
+  {brand:'Seagate',series:'IronWolf',model:'ST8000VN004',cap:'8TB',type:'CMR',rpm:7200,cache:256,nas:true,surv:false},
+  {brand:'Seagate',series:'IronWolf',model:'ST10000VN0008',cap:'10TB',type:'CMR',rpm:7200,cache:256,nas:true,surv:false},
+  {brand:'Seagate',series:'IronWolf',model:'ST12000VN0008',cap:'12TB',type:'CMR',rpm:7200,cache:256,nas:true,surv:false},
+  {brand:'Seagate',series:'IronWolf',model:'ST16000VN001',cap:'16TB',type:'CMR',rpm:7200,cache:256,nas:true,surv:false},
+  {brand:'Seagate',series:'IronWolf',model:'ST18000VN0008',cap:'18TB',type:'CMR',rpm:7200,cache:256,nas:true,surv:false},
+  {brand:'Seagate',series:'IronWolf',model:'ST20000VN008',cap:'20TB',type:'CMR',rpm:7200,cache:256,nas:true,surv:false},
+  // Seagate IronWolf Pro (all CMR)
+  {brand:'Seagate',series:'IronWolf Pro',model:'ST4000NE001',cap:'4TB',type:'CMR',rpm:7200,cache:256,nas:true,surv:false},
+  {brand:'Seagate',series:'IronWolf Pro',model:'ST6000NE000',cap:'6TB',type:'CMR',rpm:7200,cache:256,nas:true,surv:false},
+  {brand:'Seagate',series:'IronWolf Pro',model:'ST8000NE001',cap:'8TB',type:'CMR',rpm:7200,cache:256,nas:true,surv:false},
+  {brand:'Seagate',series:'IronWolf Pro',model:'ST10000NE0008',cap:'10TB',type:'CMR',rpm:7200,cache:256,nas:true,surv:false},
+  {brand:'Seagate',series:'IronWolf Pro',model:'ST12000NE0008',cap:'12TB',type:'CMR',rpm:7200,cache:256,nas:true,surv:false},
+  {brand:'Seagate',series:'IronWolf Pro',model:'ST16000NE000',cap:'16TB',type:'CMR',rpm:7200,cache:256,nas:true,surv:false},
+  {brand:'Seagate',series:'IronWolf Pro',model:'ST20000NE000',cap:'20TB',type:'CMR',rpm:7200,cache:256,nas:true,surv:false},
+  // Seagate SkyHawk (CMR, surveillance)
+  {brand:'Seagate',series:'SkyHawk',model:'ST4000VX013',cap:'4TB',type:'CMR',rpm:5900,cache:256,nas:false,surv:true},
+  {brand:'Seagate',series:'SkyHawk',model:'ST6000VX001',cap:'6TB',type:'CMR',rpm:5400,cache:256,nas:false,surv:true},
+  {brand:'Seagate',series:'SkyHawk',model:'ST8000VX004',cap:'8TB',type:'CMR',rpm:7200,cache:256,nas:false,surv:true},
+  {brand:'Seagate',series:'SkyHawk',model:'ST10000VX0004',cap:'10TB',type:'CMR',rpm:7200,cache:256,nas:false,surv:true},
+  // Seagate Barracuda (mixed)
+  {brand:'Seagate',series:'Barracuda',model:'ST1000DM010',cap:'1TB',type:'CMR',rpm:7200,cache:64,nas:false,surv:false},
+  {brand:'Seagate',series:'Barracuda',model:'ST2000DM008',cap:'2TB',type:'CMR',rpm:7200,cache:256,nas:false,surv:false},
+  {brand:'Seagate',series:'Barracuda',model:'ST4000DM004',cap:'4TB',type:'SMR',rpm:5400,cache:256,nas:false,surv:false,note:'SMR'},
+  {brand:'Seagate',series:'Barracuda',model:'ST6000DM003',cap:'6TB',type:'SMR',rpm:5400,cache:256,nas:false,surv:false,note:'SMR'},
+  {brand:'Seagate',series:'Barracuda',model:'ST8000DM004',cap:'8TB',type:'SMR',rpm:5400,cache:256,nas:false,surv:false,note:'SMR'},
+  // Toshiba N300 (all CMR)
+  {brand:'Toshiba',series:'N300',model:'HDWG440XZSTA',cap:'4TB',type:'CMR',rpm:7200,cache:256,nas:true,surv:false},
+  {brand:'Toshiba',series:'N300',model:'HDWG460XZSTA',cap:'6TB',type:'CMR',rpm:7200,cache:256,nas:true,surv:false},
+  {brand:'Toshiba',series:'N300',model:'HDWG480XZSTA',cap:'8TB',type:'CMR',rpm:7200,cache:256,nas:true,surv:false},
+  {brand:'Toshiba',series:'N300',model:'HDWG51AXZSTA',cap:'10TB',type:'CMR',rpm:7200,cache:256,nas:true,surv:false},
+  {brand:'Toshiba',series:'N300',model:'HDWG21CXZSTA',cap:'12TB',type:'CMR',rpm:7200,cache:256,nas:true,surv:false},
+  {brand:'Toshiba',series:'N300',model:'HDWG31GUZSVA',cap:'16TB',type:'CMR',rpm:7200,cache:512,nas:true,surv:false},
+  {brand:'Toshiba',series:'N300',model:'HDWG21EUZSVA',cap:'18TB',type:'CMR',rpm:7200,cache:512,nas:true,surv:false},
+  // Toshiba X300 (CMR, desktop)
+  {brand:'Toshiba',series:'X300',model:'HDWR440XZSTA',cap:'4TB',type:'CMR',rpm:7200,cache:256,nas:false,surv:false},
+  {brand:'Toshiba',series:'X300',model:'HDWR460XZSTA',cap:'6TB',type:'CMR',rpm:7200,cache:256,nas:false,surv:false},
+  {brand:'Toshiba',series:'X300',model:'HDWR480XZSTA',cap:'8TB',type:'CMR',rpm:7200,cache:256,nas:false,surv:false},
+  {brand:'Toshiba',series:'X300',model:'HDWR51AXZSTA',cap:'10TB',type:'CMR',rpm:7200,cache:256,nas:false,surv:false},
+  {brand:'Toshiba',series:'X300',model:'HDWR21CZSTA',cap:'12TB',type:'CMR',rpm:7200,cache:256,nas:false,surv:false},
+  // Toshiba MN NAS
+  {brand:'Toshiba',series:'MN',model:'MN04ACA400',cap:'4TB',type:'CMR',rpm:7200,cache:128,nas:true,surv:false},
+  {brand:'Toshiba',series:'MN',model:'MN06ACA600',cap:'6TB',type:'CMR',rpm:7200,cache:256,nas:true,surv:false},
+  {brand:'Toshiba',series:'MN',model:'MN08ADA800',cap:'8TB',type:'CMR',rpm:7200,cache:256,nas:true,surv:false},
+  {brand:'Toshiba',series:'MN',model:'MN10ACA100',cap:'10TB',type:'CMR',rpm:7200,cache:256,nas:true,surv:false},
+];
+
+const filters = { brand: 'all', type: 'all', use: 'all' };
+
+function setFilter(key, val, el) {
+  filters[key] = val;
+  el.closest('.filter-group').querySelectorAll('.chip').forEach(c => {
+    c.classList.remove('active','cmr-active','smr-active');
+  });
+  if (val === 'CMR') el.classList.add('cmr-active');
+  else if (val === 'SMR') el.classList.add('smr-active');
+  else el.classList.add('active');
+  renderDrives();
+}
+
+function renderDrives() {
+  const q = document.getElementById('searchInput').value.toLowerCase().trim();
+  let list = DRIVES.filter(d => {
+    if (filters.brand !== 'all' && d.brand !== filters.brand) return false;
+    if (filters.type !== 'all' && d.type !== filters.type) return false;
+    if (filters.use === 'nas' && !d.nas) return false;
+    if (filters.use === 'surveillance' && !d.surv) return false;
+    if (filters.use === 'desktop' && (d.nas || d.surv)) return false;
+    if (q) {
+      const hay = (d.model + d.brand + d.series + d.cap).toLowerCase();
+      if (!hay.includes(q)) return false;
+    }
+    return true;
+  });
+
+  document.getElementById('resultsCount').textContent = `${list.length} drive${list.length!==1?'s':''}`;
+
+  const grid = document.getElementById('driveGrid');
+  if (!list.length) {
+    grid.innerHTML = '<div class="no-results">No drives match — try clearing filters or searching by model number</div>';
+    return;
+  }
+
+  grid.innerHTML = list.map(d => {
+    const useTag = d.nas
+      ? '<span class="nas-badge nas-yes">NAS ✓</span>'
+      : d.surv
+        ? '<span class="nas-badge surv-badge">Surveillance</span>'
+        : '<span class="nas-badge nas-no">Desktop</span>';
+    const noteStr = d.note ? ` <span style="color:var(--smr);font-size:.72rem">(${d.note})</span>` : '';
+    return `<div class="drive-card">
+      <span class="type-badge ${d.type==='CMR'?'cmr-badge':'smr-badge'}">${d.type}</span>
+      <div class="drive-info">
+        <div class="model">${d.model}${noteStr}</div>
+        <div class="series">${d.brand} ${d.series} · ${d.cap}</div>
+      </div>
+      <div class="drive-specs">
+        <span><span class="spec-val">${d.rpm.toLocaleString()}</span> RPM</span>
+        <span><span class="spec-val">${d.cache}MB</span> cache</span>
+        ${useTag}
+      </div>
+    </div>`;
+  }).join('');
+}
+
+renderDrives();
+</script>
+</body>
+</html>
